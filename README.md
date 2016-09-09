@@ -1,2 +1,3 @@
-# xytz.github.io
-个人网站
+# cqust
+重庆科技学院
+
