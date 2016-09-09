@@ -1,0 +1,354 @@
+﻿/*去除浏览器默认样式*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background: #fff;
+}
+li {
+	list-style: none;
+}
+img {
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+/*网页内容居中*/
+#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/*头部开始*/
+#top {
+	width: 1000px;
+	height: 513px;
+	background: url("../images/main/topbg.jpg") no-repeat 0 -50px;
+	position: relative;
+}
+/*右上角文字链接*/
+.nav {
+	position: absolute;
+	z-index: 10;
+}
+.topm {
+	width: 370px;
+	top: 6px;
+	right: 6px;
+}
+.nav>li {
+	display: inline-block;
+	font-size: 14px;
+	width: 60px;
+	float: left;
+	border-left: 1px solid #333;
+	margin-left: 6px;
+	padding-left: 6px;
+	text-align: center;
+}
+.nav>li>a:hover {
+	color: purple;
+}
+.nav>li.one {
+	border: none;
+}
+/*搜索框*/
+.sousuo {
+	position: absolute;
+	top: 36px;
+	right: 6px;
+	z-index: 10;
+}
+.sousuo span {
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}
+.sousuo input {
+	height: 21px;
+	width: 130px;
+	border: 1px solid #ddd;
+}
+.sousuo img {
+	vertical-align: middle;
+	cursor: pointer;
+	margin-left: -3px;
+}
+/*menu*/
+.menu {
+	width: 660px;
+	top: 94px;
+	right: -10px;
+}
+.menu>li {
+	position: relative;
+	line-height: 16px;
+}
+.menu li:hover .con {
+	height: 240px;
+}
+.con {
+	position: absolute;
+	top: 16px;
+	left: 0;
+	padding-top: 10px;
+	height: 0;
+	overflow: hidden;
+	z-index: 10;
+	transition: all 0.3s;
+}
+.con a {
+	display: block;
+	text-align: center;
+	line-height: 32px;
+	width: 70px;
+	border-bottom: 1px dashed #aaa;
+	background: rgba(255,255,255,0.8);
+}
+.con a:hover {
+	color: #f00;
+}
+/*轮播图*/
+.lbt {
+	position: absolute;
+	bottom: 0px;
+	left: 305px;
+	width: 695px;
+	height: 388px;
+	overflow: hidden;
+}
+.lbt ul {
+	width: 5000px;
+	height: 388px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.lbt ul li {
+	float: left;
+}
+.lbt ol {
+	position: absolute;
+	bottom: 10px;
+	left: 620px;
+}
+.lbt ol li{
+	float: left;
+	width: 9px;
+	height: 8px;
+	margin-left: 4px;
+	background: url("../images/main/lbt.png") 9px center;
+	cursor: pointer;
+}
+.lbt ol .active {
+	background-position: 0 center;
+}
+/*运动的广告*/
+#ad {
+	width: 240px;
+	height: 104px;
+	position: absolute;
+}
+
+/*导读部分*/
+#daodu {
+	height: 120px;
+	width: 1000px;
+	background: url("../images/main/daodu.jpg") repeat-x;
+	/*border: 1px solid red;*/
+}
+#daodu ul {
+	margin-left: 80px;
+}
+#daodu ul li{
+	float: left;
+	font-size: 14px;
+	line-height: 25px;
+	margin-left: 14px;
+	list-style: url("../images/main/dli.jpg") inside;
+}
+#daodu ul li.over {
+	width: 320px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#daodu a:hover {
+	color: #1c5799;
+}
+#daodu strong {
+	font-size: 14px;
+	line-height: 25px;
+}
+.daocon {
+	width: 1000px;
+	height: 86px;
+	margin-top: 9px;
+}
+.daoleft, .daoright {
+	float: left;
+	position: relative;
+}
+
+/*导读左部分*/
+.daoleft {
+	width: 660px;
+}
+.daocon img {
+	margin: 12px;
+}
+.daocon h2 {
+	position: absolute;
+	top: 20px;
+	left: 86px;
+	font: bold 24px Arial;
+	color: #7a155b;
+}
+.daocon h2:hover {
+	color: #1f5999;
+}
+.daoleft .txt {
+	position: absolute;
+	left: 86px;
+	bottom: 14px;
+}
+.daocon .txt p {
+	float: left;
+	font-size: 14px;
+	margin-right: 12px;
+}
+.daocon .txt .fp {
+	padding-right: 10px;
+	border-right: 1px solid #000;
+}
+/*导读右部分*/
+.daoright {
+	width: 340px;
+}
+.daoright .txt {
+	position: absolute;
+	top: 10px;
+	left: 86px;
+	width: 180px;
+}
+.daoright .txt p {
+	line-height: 24px;
+}
+.daoright .more {
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+}
+/*用户导航*/
+#daohang {
+	width: 1000px;
+	height: 230px;
+}
+/*导航左部*/
+#daohang .left {
+	width: 150px;
+	height: 100%;
+	float: left;
+	background: url("../images/main/yhdh.jpg") no-repeat;
+}
+#daohang .left h2 {
+	width: 148px;
+	line-height: 34px;
+	text-align: center;
+	color: #714570;
+}
+.left ul li {
+	width: 148px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+.left ul li a:hover {
+	color: #1c5799;
+}
+/*导航中间*/
+#daohang .context {
+	width: 390px;
+	height: 230px;
+	float: left;
+	padding: 6px 0 6px 30px;
+}
+#daohang .right {
+	float: right;
+}
+.context ul {
+	width: 390px;
+	height: 24px;
+	border-bottom: 2px solid #aaa;
+}
+.context ul li {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 14px;
+	margin-right: 20px;
+}
+.context ul li.active a {
+	color: #6c295c;
+	display: inline-block;
+	height: 24px;
+	border-bottom: 2px solid #6D2B5D;
+}
+.context ol {
+	padding-top: 6px;
+	display: none;
+}
+.context ol.active {
+	display: block;
+}
+.context ol li{
+	list-style: url("../images/main/dli.jpg") inside;
+	line-height: 26px;
+	font-size: 12px;
+	border-bottom: 1px dashed #aaa;
+}
+.context ol li a:hover {
+	color: #1c5799;
+}
+.context ol span {
+	float: right;
+}
+
+/*底部*/
+#bottom {
+	width: 1000px;
+	height: 130px;
+	background: url("../images/main/bottom.jpg") repeat-x;
+	text-align: center;
+	position: relative;
+	margin-bottom: 14px;
+}
+#bottom ul li {
+	display: inline-block;
+	margin-right: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #333;
+}
+#bottom ul .first {
+	border: none;
+}
+#bottom p {
+	width: 600px;
+	margin: 6px auto;
+	line-height: 35px;
+}
+#bottom img {
+	position: absolute;
+	top: 10px;
+}
+#bottom .left {
+	left: 140px;
+}
+#bottom .right {
+	right: 140px;
+}
