@@ -148,12 +148,6 @@ a {
 .lbt ol .active {
 	background-position: 0 center;
 }
-/*运动的广告*/
-#ad {
-	width: 240px;
-	height: 104px;
-	position: absolute;
-}
 
 /*导读部分*/
 #daodu {
